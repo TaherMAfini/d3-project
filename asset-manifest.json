@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/d3-project/static/css/main.1fe90504.css",
+    "main.js": "/d3-project/static/js/main.6a762849.js",
+    "static/js/453.89784bfa.chunk.js": "/d3-project/static/js/453.89784bfa.chunk.js",
+    "index.html": "/d3-project/index.html",
+    "main.1fe90504.css.map": "/d3-project/static/css/main.1fe90504.css.map",
+    "main.6a762849.js.map": "/d3-project/static/js/main.6a762849.js.map",
+    "453.89784bfa.chunk.js.map": "/d3-project/static/js/453.89784bfa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fe90504.css",
+    "static/js/main.6a762849.js"
+  ]
+}
