@@ -17,11 +17,14 @@ class App extends Component {
     return (
       <div className="container-fluid text-center">
         <div className="row">
+          <h3>Interactive Element</h3>
+        </div>
+        <div className="row">
           <div className="col">
-            <h1>Column 1</h1>
+            <h1>Graph 1</h1>
           </div>
           <div className="col">
-            <h1>Column 2</h1>
+            <h1>Graph 2</h1>
           </div>
         </div>
       </div>
