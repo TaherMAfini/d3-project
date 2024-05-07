@@ -3,6 +3,11 @@
 }
 
 
-#bar-chart, #scatter-plot {
+.col {
+  text-align: center;
+}
+
+.barChart, .scatter {
   border: 2px solid #ededed;
+  width: 1000px;
 }

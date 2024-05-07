@@ -31,10 +31,14 @@ class App extends Component {
     return (
       <div className="container-fluid text-center">
         <div className="row">
-          <Child1 data1={this.state.data}/>
+          <div className="col">
+            <Child1 data1={this.state.data}/>
+          </div>
         </div>
         <div className="row">
-          <Child2 data2={this.state.data}/>
+          <div className="col">
+            <Child2 data2={this.state.data}/>
+          </div>
         </div>
       </div>
     );

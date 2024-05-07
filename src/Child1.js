@@ -24,7 +24,7 @@ class Child1 extends Component {
     )
     
     let margin = {top: 20, right: 40, bottom: 50, left: 20},
-      width = 500 - margin.left - margin.right,
+      width = 750 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
     let container = d3.select("#bar-chart")
@@ -61,7 +61,7 @@ class Child1 extends Component {
         .attr("y", d => y_scale(d[1]))
         .attr("width", x_scale.bandwidth())
         .attr("height", d => height - y_scale(d[1]))
-        .attr("fill", "steelblue");
+        .attr("fill", "#69b3a2");
     
       // Bar Labels
       container.selectAll(".bar-label")
@@ -72,7 +72,7 @@ class Child1 extends Component {
           .attr("y", d => y_scale(d[1]) + 15)
           .attr("text-anchor", "middle")
           .text(d => d[1].toFixed(2))
-          .attr("fill", "#ededed");
+          .attr("fill", "#black");
 
       // X-axis Label
       container.selectAll("x-axis-label")
