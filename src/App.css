@@ -1,8 +1,8 @@
 .row {
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
-.col {
+
+#bar-chart, #scatter-plot {
   border: 2px solid #ededed;
-  background-color: #ededed;
 }
