@@ -48,7 +48,7 @@ class Child2 extends Component {
       .style("border", "1px solid black")
       .style("border-radius", "5px")
       .style("padding", "5px")
-      .style("font-size", "12px")
+      .style("font-size", "15px")
 
     // Filter data
 
