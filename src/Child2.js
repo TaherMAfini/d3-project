@@ -38,6 +38,17 @@ class Child2 extends Component {
       d3.select("#target").attr('value', options[0])
     }
 
+    let tooltip = d3.select("body").selectAll(".tooltip_div")
+      .data([0])
+      .join("div")
+      .attr("class", "tooltip_div")
+      .style("position", "absolute")
+      .style("visibility", "hidden")
+      .style("background-color", "#ededed")
+      .style("border", "1px solid black")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+      .style("font-size", "12px")
 
     // Filter data
 
@@ -94,7 +105,7 @@ class Child2 extends Component {
       .data([0])
       .join('text')
       .attr('class', 'y-axis-label')
-      .attr('transform', `translate(0, ${height/2})`)
+      .attr('transform', `translate(0, ${(height+margin.top)/2})`)
       .attr('text-anchor', 'middle')
       .text('Y');
 
@@ -106,6 +117,19 @@ class Child2 extends Component {
       .attr('cy', d => y_scale(d.y))
       .attr('r', 5)
       .attr('fill', '#69b3a2')
+      .on('mouseover', (event, d) => {
+        tooltip.style("visibility", "visible")
+          .style("top", (event.pageY) + "px")
+          .style("left", (event.pageX) + "px")
+          .html(`x is : ${d.x}<br>y is : ${d.y}`)
+      })
+      .on('mousemove', (event) => {
+        tooltip.style("top", (event.pageY) + "px")
+          .style("left", (event.pageX) + "px")
+      })
+      .on('mouseout', () => {
+        tooltip.style("visibility", "hidden")
+      })
   }
 
   render() {

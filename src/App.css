@@ -10,4 +10,5 @@
 .barChart, .scatter {
   border: 2px solid #ededed;
   width: 1000px;
+  margin: 0 auto;
 }

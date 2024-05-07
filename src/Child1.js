@@ -24,7 +24,7 @@ class Child1 extends Component {
     )
     
     let margin = {top: 20, right: 40, bottom: 50, left: 20},
-      width = 750 - margin.left - margin.right,
+      width = 500 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
     let container = d3.select("#bar-chart")
@@ -45,7 +45,8 @@ class Child1 extends Component {
       .join("g")
       .attr("class", "x-axis-g")
       .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x_scale));
+      .call(d3.axisBottom(x_scale))
+      .attr('font-size', '12px');
 
     // Y-axis
     let y_data = grouped_data.map(d => d[1])
@@ -83,6 +84,7 @@ class Child1 extends Component {
           .attr("y", height + 40)
           .attr("text-anchor", "middle")
           .text("categories")
+          .attr('font-size', '15px')
     
 
   }
